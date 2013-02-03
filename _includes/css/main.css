@@ -1,0 +1,56 @@
+/*
+ * I love horses - CSS
+ *
+ * Inherits: normalize.css
+ *
+ */
+
+/* layout defaults */
+  html,
+  body {
+    height:100%;
+  }
+
+  body {
+    font-family: Papyrus, "Comic Sans MS", cursive;
+    color:#000;
+    background:url(../img/horse.gif) #fff no-repeat 50% 50%;
+    background-size: contain;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header,
+  p.footnote {
+    background:rgba(0,0,0,0.75);
+    color:#ff1493;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:0;
+    padding:15px 10px 10px 10px;
+    line-height:1;
+    text-align:center;
+  }
+
+  h1,
+  p#seconds {
+    float:left;
+    margin:0;
+    padding:0;
+  }
+
+  p#seconds {
+    margin-top:10px;
+    float:right;
+    text-align:right;
+  }
+
+  p.footnote {
+    top:auto;
+    bottom:0;
+  }
+
+  a {
+    color:#ff1493;
+  }
