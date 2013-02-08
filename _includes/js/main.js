@@ -1,14 +1,25 @@
 /*
  * Application-specific JavaScript
  */
+var playing = false;
 var sound = new Howl({
   urls: ['./_includes/audio/i_love_horses.mp3'],
   autoplay: true,
   loop: true,
   onend: function() {
-    console.log('Finished!');
+    playing = false;
   }
 });
+
+// for touch devices - no autoplay
+document.addEventListener('touchstart', playSound);
+
+function playSound() {
+  if (!playing) {
+    sound.play();
+    playing = true;
+  }
+}
 
 
 function externalLinks() {

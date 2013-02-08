@@ -9,13 +9,16 @@
   html,
   body {
     height:100%;
+    overflow:hidden;
+  }
+
+  html {
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
   }
 
   body {
     font-family: Papyrus, "Comic Sans MS", cursive;
     color:#000;
-    background:url(../img/horse.gif) #fff no-repeat 50% 50%;
-    background-size: contain;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -31,6 +34,16 @@
     padding:15px 10px 10px 10px;
     line-height:1;
     text-align:center;
+  }
+
+  #bg {
+    background:url(../img/horse.gif) no-repeat center center; /* ANDROID */
+    background-size: contain;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
   }
 
   h1,
