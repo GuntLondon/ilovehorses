@@ -3,7 +3,7 @@
  */
 var playing = false;
 var sound = new Howl({
-  src: ['./_includes/audio/i_love_horses.mp3'],
+  src: ['./includes/audio/i_love_horses.mp3'],
   autoplay: true,
   loop: true,
   onend: function() {
